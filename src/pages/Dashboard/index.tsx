@@ -1,58 +1,64 @@
-import React from 'react';
+import React, { useState, FormEvent } from 'react';
 import { FiChevronRight } from 'react-icons/fi';
+import api from '../../services/api';
 
 import logoImg from '../../assets/logo.svg';
 
 import { Title, Form, Repositories } from './styles';
 
+interface Repository {
+    full_name: string;
+    owner: {
+        login: string;
+        avatar_url: string;
+    };
+    description: string;
+}
+
 const Dashboard: React.FC = () => {
+    const [newRepo, setNewRepo] = useState('');
+    const [repositories, setRepositories] = useState<Repository[]>([]);
+
+    async function handleAddRepository(event: FormEvent<HTMLFormElement>) {
+        event.preventDefault();
+
+        const response = await api.get<Repository>(`repos/${newRepo}`);
+
+        const repository = response.data
+
+        setRepositories([...repositories, repository]);
+        setNewRepo('');
+    }
+
     return (
         <>
             <img src={logoImg} alt="Github Explorer" />
+            
             <Title>Explore repositórios no Github</Title>
 
-            <Form action="">
-                <input placeholder="Nome do repositório" />
+            <Form onSubmit = {handleAddRepository}>
+                <input
+                    value = {newRepo}
+                    onChange = {(e) => setNewRepo(e.target.value)}
+                    placeholder = "Nome do repositório"
+                />
                 <button type="submit">Pesquisar</button>
             </Form>
 
             <Repositories>
-                <a href="test">
-                    <img src="https://avatars2.githubusercontent.com/u/49010570?s=460&u=7c40a5565f85aa4bb187ffb315083d754b0755ec&v=4" alt=""></img>
+                {repositories.map(repository => (
+                    <a key={repository.full_name} href="teste">
+                    <img
+                        src={repository.owner.avatar_url}
+                        alt={repository.owner.login}
+                    />
                     <div>
-                        <strong>rntdc/coronametter</strong>
-                        <p>Dados atualizados sobre o coronavirus</p>
+                        <strong>{repository.full_name}</strong>
+                        <p>{repository.description}</p>
                     </div>
-                    
-                    <FiChevronRight size={20}/>
-                </a>
-                <a href="test">
-                    <img src="https://avatars2.githubusercontent.com/u/49010570?s=460&u=7c40a5565f85aa4bb187ffb315083d754b0755ec&v=4" alt=""></img>
-                    <div>
-                        <strong>rntdc/coronametter</strong>
-                        <p>Dados atualizados sobre o coronavirus</p>
-                    </div>
-                    
-                    <FiChevronRight size={20}/>
-                </a>
-                <a href="test">
-                    <img src="https://avatars2.githubusercontent.com/u/49010570?s=460&u=7c40a5565f85aa4bb187ffb315083d754b0755ec&v=4" alt=""></img>
-                    <div>
-                        <strong>rntdc/coronametter</strong>
-                        <p>Dados atualizados sobre o coronavirus</p>
-                    </div>
-                    
-                    <FiChevronRight size={20}/>
-                </a>
-                <a href="test">
-                    <img src="https://avatars2.githubusercontent.com/u/49010570?s=460&u=7c40a5565f85aa4bb187ffb315083d754b0755ec&v=4" alt=""></img>
-                    <div>
-                        <strong>rntdc/coronametter</strong>
-                        <p>Dados atualizados sobre o coronavirus</p>
-                    </div>
-                    
-                    <FiChevronRight size={20}/>
-                </a>
+                    <FiChevronRight size={20} />
+                    </a>
+                ))}               
             </Repositories>
         </>
     );
