@@ -1,6 +1,6 @@
 ### Sobre
 
-Projeto do bootcamp da Rocketseat, com o objetivo de aplicar conceitos do React utilizando a api do github.
+Projeto do bootcamp da Rocketseat com o objetivo de aplicar conceitos do React utilizando a api do github.
 
 
 ### Web
@@ -34,7 +34,3 @@ $ npm start ou yarn start
 
 ```
 
-## Autor
-
- <img style="border-radius: 50%;" src="https://github.com/rntdc.png" width="50px;" alt=""/>
- Renato 👋🏽
