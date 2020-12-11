@@ -43,4 +43,4 @@ $ npm start ou yarn start
 ## Autor
 
  <img style="border-radius: 50%;" src="https://github.com/rntdc.png" width="50px;" alt=""/>
- Renato 👋🏽 [Entre em contato!](https://www.linkedin.com/in/renato-dekeches-272417151/)
+ Renato 👋🏽
