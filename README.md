@@ -1,13 +1,6 @@
+### Sobre
 
-<p align="center">
-  <img alt="GitHub issues" src="https://img.shields.io/github/issues/rntdc/github-explorer">
-
-  <img alt="GitHub Forks" src="https://img.shields.io/github/forks/rntdc/github-explorer">
-
-  <a href="https://github.com/rntdc/github-explorer/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/rntdc/github-explorer">
-  </a>
-</p>
+Projeto do bootcamp da Rocketseat, com o objetivo de aplicar conceitos do React utilizando a api do github.
 
 
 ### Web
@@ -40,6 +33,7 @@ $ npm start ou yarn start
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
 ```
+
 ## Autor
 
  <img style="border-radius: 50%;" src="https://github.com/rntdc.png" width="50px;" alt=""/>
