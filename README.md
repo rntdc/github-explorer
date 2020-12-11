@@ -34,7 +34,3 @@ $ npm start ou yarn start
 
 ```
 
-## Autor
-
- <img style="border-radius: 50%;" src="https://github.com/rntdc.png" width="50px;" alt=""/>
- Renato 👋🏽
