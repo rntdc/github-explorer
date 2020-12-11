@@ -1,6 +1,6 @@
 ### Sobre
 
-Projeto do bootcamp da Rocketseat, com o objetivo de aplicar conceitos do React utilizando a api do github.
+Projeto do bootcamp da Rocketseat com o objetivo de aplicar conceitos do React utilizando a api do github.
 
 
 ### Web
