@@ -1,46 +1,46 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/rntdc/github-explorer">
 
-## Available Scripts
+  <img alt="GitHub Forks" src="https://img.shields.io/github/forks/rntdc/github-explorer">
 
-In the project directory, you can run:
+  <a href="https://github.com/rntdc/github-explorer/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/rntdc/github-explorer">
+  </a>
+</p>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Web
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="first" title="#D1" src="src/assets/first.gif" width="800px">
+</p>
 
-### `yarn test`
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="second" title="#D1" src="src/assets/second.gif" width="800px">
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+#### Rodando a aplicação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Clone este repositório
+$ git clone https://github.com/rntdc/github-explorer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd github-explorer
 
-### `yarn eject`
+# Instale as dependências
+$ npm install ou yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Execute a aplicação em modo de desenvolvimento
+$ npm start ou yarn start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+## Autor
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+ <img style="border-radius: 50%;" src="https://github.com/rntdc.png" width="50px;" alt=""/>
+ Renato 👋🏽 [Entre em contato!](https://www.linkedin.com/in/renato-dekeches-272417151/)
